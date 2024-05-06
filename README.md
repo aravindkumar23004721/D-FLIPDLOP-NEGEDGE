@@ -1,6 +1,6 @@
 # D-FLIPDLOP-NEGEDGE
-# REG NO:212223220113
-# NAME:SUSITHRA.B
+# REG NO:212223110004
+# NAME:Aravind kumar SS
 **AIM:**
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
