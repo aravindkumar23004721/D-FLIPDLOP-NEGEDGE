@@ -1,5 +1,6 @@
 # D-FLIPDLOP-NEGEDGE
-
+# REG NO:212223110004
+# NAME:Aravind kumar ss
 **AIM:**
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
@@ -27,18 +28,36 @@ Therefore, D flip-flop always Hold the information, which is available on data i
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
 **Procedure**
+1.Type the program in Quartus software.
 
-/* write all the steps invloved */
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
-
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
-
+```
+module dflipflop(D,Clock,Q,Qbar);
+input D,Clock;
+output reg Q,Qbar;
+always @ (negedge Clock)// use negative edge clock for triggereing condition 
+//compute D flipflop logic here
+begin
+ 	Q=D;
+Qbar=~D;
+end
+ endmodule
+```
 **RTL LOGIC FOR FLIPFLOPS**
+![image](https://github.com/SusithraB/D-FLIPDLOP-NEGEDGE/assets/146347839/b55b60cb-e828-41d1-a827-d25a77a3cf4a)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![image](https://github.com/SusithraB/D-FLIPDLOP-NEGEDGE/assets/146347839/96885ffb-6098-4673-9b9b-b255181fefda)
 
 
 **RESULTS**
+ Thus the program to implement a D flipflop using verilog and validating their functionality using their functional tables
